@@ -7,7 +7,7 @@ public class PHPDemo extends BaseClass{
 
 	public static void main(String[] args) {
 		
-		load();
+		loadBrowser();
 		driver.get("https://phptravels.com/");
 		String title = driver.getTitle();
 		WebElement titleShown = driver.findElement(By.xpath("//*[name()='text' and @id='PHPTRAVELS']"));

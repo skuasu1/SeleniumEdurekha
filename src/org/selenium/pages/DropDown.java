@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 public class DropDown extends BaseClass {
 
 	public static void main(String[] args) {
-		load();
+		loadBrowser();
 		driver.get("https://www.globalsqa.com/demo-site/select-dropdown-menu/");
 		Select selectRef = new Select(driver.findElement(
 				By.xpath("//div[@class='single_tab_div resp-tab-content resp-tab-content-active']//p//select")));

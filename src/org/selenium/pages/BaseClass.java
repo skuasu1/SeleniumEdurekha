@@ -12,8 +12,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BaseClass {
 	public static WebDriver driver;
 
-	public static void load() {
-		System.setProperty("webdriver.chrome.driver", "D:\\Java Coding\\Chrome Driver\\chromePath\\chromedriver.exe");
+	public static void loadBrowser() {
+		String currentDir = System.getProperty("user.dir");
+		System.setProperty("webdriver.chrome.driver", currentDir + "\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 

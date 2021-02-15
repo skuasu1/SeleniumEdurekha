@@ -7,7 +7,7 @@ public class PractiseAutomation extends BaseClass {
 
 	public static void main(String[] args) {
 		boolean flag;
-		load();
+		loadBrowser();
 		driver.get("https://www.techlistic.com/p/selenium-practice-form.html");
 		driver.manage().window().maximize();
 		// locating elements using id
