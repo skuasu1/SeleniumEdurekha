@@ -13,13 +13,13 @@ public class EdurekhaSeleniumAutomation {
 	public static void main(String[] args) {
 		String emailcolor = null;
 
-		System.setProperty("webdriver.chrome.driver", "D:\\Java Coding\\Chrome Driver\\chromePath\\chromedriver.exe");
+		String currentdirectory = System.getProperty("user.dir");
+		System.setProperty("webdriver.chrome.driver", currentdirectory + "\\drivers\\chromedriver.exe");
 
 		// to disable all chrome notifications
 
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-notifications");
-
 		WebDriver driver = new ChromeDriver(options);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		driver.get("https://www.facebook.com/");
@@ -55,7 +55,5 @@ public class EdurekhaSeleniumAutomation {
 				}
 			}
 		}
-
 	}
-
 }

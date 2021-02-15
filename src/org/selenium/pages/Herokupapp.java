@@ -35,7 +35,7 @@ public class Herokupapp {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//a[@href='/frames']")).click();
-		driver.findElement(By.xpath("//a[normalize-space()='iFrame']")).click();
+		driver.findElement(By.linkText("iFrame")).click();
 
 		
 
