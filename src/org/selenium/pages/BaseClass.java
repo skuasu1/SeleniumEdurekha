@@ -14,7 +14,7 @@ public class BaseClass {
 
 	public static void loadBrowser() {
 		String currentDir = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", currentDir + "\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", currentDir + "\\drivers\\chromedriver02.exe");
 		driver = new ChromeDriver();
 	}
 

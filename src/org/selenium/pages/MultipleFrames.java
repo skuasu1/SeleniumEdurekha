@@ -14,7 +14,7 @@ public class MultipleFrames extends BaseClass {
 		// switching to frame 1 if no framename or frameid
 		driver.switchTo().frame(1);
 		driver.findElement(By.name("name")).sendKeys("karthik.S");
-		js.executeScript("window.scrollBy(0,-250)");
+		js.executeScript("window.scrollBy(0,-250)");// vertical
 		driver.findElement(By.name("suggestions")).sendKeys("I am from tumkur");
 		js.executeScript("window.scrollBy(0,-250)");
 		driver.findElement(By.xpath("//input[@type='submit']")).click();

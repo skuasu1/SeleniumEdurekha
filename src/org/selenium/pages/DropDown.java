@@ -16,7 +16,7 @@ public class DropDown extends BaseClass {
 		List<WebElement> list = selectRef.getOptions();
 		for (int i = 0; i < list.size(); i++) {
 			// to get the values of the dropdown
-			//System.out.println(list.get(i).getText());
+			System.out.println(list.get(i).getText());
 		}
 		driver.close();
 	}
